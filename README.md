@@ -28,7 +28,7 @@ poetry --version
 poetry install
 ```
 
-1. 開啟poetry 的環境
+5. 開啟poetry 的環境
 - linux
 ```bash
 eval $(poetry env activate)
