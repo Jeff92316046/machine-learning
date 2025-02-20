@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.12"
 opencv-python = "^4.11.0.86"
 opencv-contrib-python = "^4.11.0.86"
 scikit-image = "^0.25.2"
@@ -19,7 +19,16 @@ beautifulsoup4 = "^4.13.3"
 pandas = "^2.2.3"
 sh = "^2.2.1"
 json-minify = "^0.3.0"
-
+tensorflow = {version = "^2.13.0" }
+tensorflow-intel = { version = "^2.13.0", platform = "win32" }
+tensorflow-cpu = [
+    { version = "^2.13.0", platform = "linux", markers = "platform_machine!='arm64' and platform_machine!='aarch64'" },
+    { version = "^2.13.0", platform = "darwin", markers = "platform_machine!='arm64' and platform_machine!='aarch64'" },]
+tensorflow-cpu-aws = { version = "^2.13.0", platform = "linux", markers = "platform_machine=='arm64' or platform_machine=='aarch64'" }
+tensorflow-io-gcs-filesystem = [
+    { version = ">= 0.23.1", markers = "platform_machine!='arm64' or platform_system!='Darwin'" },
+    { version = "< 0.32.0", markers = "platform_system == 'Windows'" }
+]
 
 [build-system]
 requires = ["poetry-core"]
