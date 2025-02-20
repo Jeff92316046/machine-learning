@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "machine-learning"
+version = "0.1.0"
+description = ""
+authors = ["ErEr <jeffliao92316046@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.11.0.86"
+opencv-contrib-python = "^4.11.0.86"
+scikit-image = "^0.25.2"
+imutils = "^0.5.4"
+scikit-learn = "^1.6.1"
+matplotlib = "^3.10.0"
+progressbar2 = "^4.5.0"
+beautifulsoup4 = "^4.13.3"
+pandas = "^2.2.3"
+sh = "^2.2.1"
+json-minify = "^0.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
