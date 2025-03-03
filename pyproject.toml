@@ -29,6 +29,9 @@ tensorflow-io-gcs-filesystem = [
     { version = ">= 0.23.1", markers = "platform_machine!='arm64' or platform_system!='Darwin'" },
     { version = "< 0.32.0", markers = "platform_system == 'Windows'" }
 ]
+pyqt5 = "=5.15.10"   
+pyqt5-qt5 = "=5.15.2"
+labelimg = "^1.8.6"
 
 [build-system]
 requires = ["poetry-core"]
