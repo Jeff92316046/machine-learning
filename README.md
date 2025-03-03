@@ -37,7 +37,10 @@ eval $(poetry env activate)
 ```bash
 Invoke-Expression (poetry env activate)
 ```
-
+## open labelImg
+```sh
+python .venv\Lib\site-packages\labelImg\labelImg.py
+```
 ## 參考
 [https://blog.kyomind.tw/python-poetry/](https://blog.kyomind.tw/python-poetry/)
 
