@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+lesson4/4scenes
 # Distribution / packaging
 .Python
 build/
