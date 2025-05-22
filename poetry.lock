@@ -1596,6 +1596,29 @@ files = [
 pyasn1 = ">=0.4.6,<0.7.0"
 
 [[package]]
+name = "pydot"
+version = "4.0.0"
+description = "Python interface to Graphviz's Dot"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+markers = "platform_machine != \"arm64\" and platform_machine != \"aarch64\" and (sys_platform == \"linux\" or sys_platform == \"darwin\") or sys_platform != \"linux\" and sys_platform != \"darwin\" or platform_machine == \"arm64\" or platform_machine == \"aarch64\""
+files = [
+    {file = "pydot-4.0.0-py3-none-any.whl", hash = "sha256:cf86e13a6cfe2a96758a9702537f77e0ac1368db8ef277b4d3b34473ea425c97"},
+    {file = "pydot-4.0.0.tar.gz", hash = "sha256:12f16493337cade2f7631b87c8ccd299ba2e251f3ee5d0732a058df2887afe97"},
+]
+
+[package.dependencies]
+pyparsing = ">=3.0.9"
+
+[package.extras]
+dev = ["chardet", "parameterized", "pydot[lint]", "pydot[types]"]
+lint = ["ruff"]
+release = ["zest.releaser[recommended]"]
+tests = ["pydot[dev]", "pytest", "pytest-cov", "pytest-xdist[psutil]", "tox"]
+types = ["mypy"]
+
+[[package]]
 name = "pyparsing"
 version = "3.2.1"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
@@ -2550,4 +2573,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.12"
-content-hash = "b39b1378da23d963019ab3c33c531de1c9dd7eb197673879e11c123062346799"
+content-hash = "57a8bcd53d529586da389e2fee95fd43538281e402243baf8c65a4766b170479"

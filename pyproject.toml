@@ -33,6 +33,7 @@ pyqt5 = "=5.15.10"
 pyqt5-qt5 = "=5.15.2"
 labelimg = "^1.8.6"
 mahotas = "^1.4.18"
+pydot = "^4.0.0"
 
 [build-system]
 requires = ["poetry-core"]
